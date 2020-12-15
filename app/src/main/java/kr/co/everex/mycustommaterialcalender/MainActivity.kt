@@ -26,6 +26,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.button3.setOnClickListener(){
+            val intent = Intent(this, CosmoCalenderActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

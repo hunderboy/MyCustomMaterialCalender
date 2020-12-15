@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MaterialCalenderActivity"></activity>
-        <!-- android:theme="@style/Theme.MyCustomMaterialCalender" -->
+        <activity android:name=".CosmoCalenderActivity"></activity>
+        <activity android:name=".MaterialCalenderActivity" /> <!-- android:theme="@style/Theme.MyCustomMaterialCalender" -->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
