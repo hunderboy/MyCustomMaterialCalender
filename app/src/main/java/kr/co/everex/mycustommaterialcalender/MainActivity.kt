@@ -30,11 +30,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CosmoCalenderActivity::class.java)
             startActivity(intent)
         }
-        binding.button4.setOnClickListener(){
-            val intent = Intent(this, CosmoCalenderActivity::class.java)
+        binding.button4.setOnClickListener(){ // 추가중
+//            val intent = Intent(this, CosmoCalenderActivity::class.java)
+//            startActivity(intent)
+        }
+        binding.button5.setOnClickListener(){
+            val intent = Intent(this, MaterialInFragmentActivity::class.java)
             startActivity(intent)
         }
-
 
     }
 

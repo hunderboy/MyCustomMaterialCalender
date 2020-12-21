@@ -22,10 +22,6 @@ class MaterialCalenderActivity : AppCompatActivity() {
         materialDateBuilder.setTitleText("날짜 선택하기")
         val materialDatePicker = materialDateBuilder.build();
 
-        // 기간 선택
-        val materialRangeBuilder: MaterialDatePicker.Builder<Pair<Long, Long>> = MaterialDatePicker.Builder.dateRangePicker()
-        val materialRangePicker = materialRangeBuilder.build();
-
 
         binding.pickDateButton.setOnClickListener{
             materialDatePicker.show(supportFragmentManager, "MATERIAL_DATE_PICKER")
@@ -35,6 +31,12 @@ class MaterialCalenderActivity : AppCompatActivity() {
             binding.showSelectedDate.text = "Selected Date is : " + materialDatePicker.headerText
         }
 
+
+
+
+        // 기간 선택
+        val materialRangeBuilder: MaterialDatePicker.Builder<Pair<Long, Long>> = MaterialDatePicker.Builder.dateRangePicker()
+        val materialRangePicker = materialRangeBuilder.build();
 
         binding.pickDateButton2.setOnClickListener{
             materialRangePicker.show(supportFragmentManager, "MATERIAL_DATE_PICKER");
