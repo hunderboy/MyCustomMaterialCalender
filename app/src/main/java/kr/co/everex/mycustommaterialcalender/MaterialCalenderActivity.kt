@@ -36,6 +36,8 @@ class MaterialCalenderActivity : AppCompatActivity() {
 
         // 기간 선택
         val materialRangeBuilder: MaterialDatePicker.Builder<Pair<Long, Long>> = MaterialDatePicker.Builder.dateRangePicker()
+        materialRangeBuilder.setTitleText("기간 선택하기")
+        materialRangeBuilder.setTheme(R.style.ThemeOverlay_MaterialComponents_MaterialCalendar)
         val materialRangePicker = materialRangeBuilder.build();
 
         binding.pickDateButton2.setOnClickListener{
