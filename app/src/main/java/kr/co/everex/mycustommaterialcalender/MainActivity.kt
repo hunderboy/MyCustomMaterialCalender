@@ -38,6 +38,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, MaterialInFragmentActivity::class.java)
             startActivity(intent)
         }
+        binding.button6.setOnClickListener(){
+            val intent = Intent(this, TimeCalculateActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
